@@ -1,0 +1,9 @@
+{
+  "name": "sistema-delivery-celly",
+  "version": "1.0.0",
+  "description": "Sistema para bares e restaurantes - Celly Sistemas",
+  "scripts": {
+    "build": "echo 'No build needed'"
+  },
+  "private": true
+}

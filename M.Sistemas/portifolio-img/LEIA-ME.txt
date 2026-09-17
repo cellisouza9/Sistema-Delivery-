@@ -1,0 +1,48 @@
+PASTA DE IMAGENS DO SITE (portifolio-img)
+================================================
+
+Esta pasta reúne TODAS as imagens usadas em todo o site (index.html,
+portfolio.html, bio.html e automacao-chatbot.html). Antes elas ficavam
+espalhadas em pastas soltas na raiz do projeto (img/, comercial/,
+identidade visual/, carrosel/, bio-fotos/, portfolio-imagens/). Agora
+está tudo dentro de uma única pasta para ficar fácil de achar, trocar
+e, principalmente, hospedar: quando for subir o site pra um
+servidor/hospedagem (Hostinger, Vercel, Netlify...), basta garantir
+que a pasta "portifolio-img" inteira vá junto, mantendo os mesmos
+nomes de subpasta - os caminhos no HTML e no JS apontam exatamente
+pra cá.
+
+Estrutura (cada subpasta veio de uma pasta antiga, só mudou o endereço):
+
+img/                -> usada no index.html, bio.html e automacao-chatbot.html
+                       (logo, favicon, robozinho da IA, etc.)
+comercial/          -> usada no index.html e automacao-chatbot.html
+                       (imagens do sistema, cardápio, PDV, categorias)
+identidade-visual/  -> usada no index.html
+                       (era "identidade visual/", renomeada sem espaço/acento)
+carrosel/           -> usada no index.html (carrossel do sistema de delivery)
+bio-fotos/          -> usada no bio.html e no bio.js
+
+logo/               -> usada no portfolio.html (logo e favicon do portfólio)
+hero/               -> usada no portfolio.html (imagem principal da seção Hero)
+sobre/              -> reservada pro portfolio.html (foto da seção "Sobre", se quiser trocar
+                       os cards de texto por uma foto no futuro)
+projetos/           -> usada no portfolio.html (cases de projetos)
+carrossel/          -> usada no portfolio.html (carrossel de telas do sistema)
+icones/             -> usada no portfolio.html (ícone/mascote decorativo)
+
+COMO TROCAR UMA IMAGEM
+-----------------------
+1. Coloque o novo arquivo dentro da subpasta certa (ex: projetos/).
+2. Dê um nome parecido ou o mesmo nome do arquivo que está sendo
+   trocado (mais fácil) OU
+3. Se usar outro nome, abra o HTML/JS correspondente e troque o
+   caminho "portifolio-img/..." pelo novo nome do arquivo.
+
+DEPOIMENTOS / FOTOS DE CLIENTES
+--------------------------------
+A seção de depoimentos do portfolio.html está preparada mas ainda sem
+depoimentos reais (o próprio material de referência recomenda não usar
+depoimentos inventados). Quando tiver depoimentos e fotos reais de
+clientes, crie uma subpasta "depoimentos/" aqui dentro e me avise pra
+eu montar os cards com as fotos e frases reais.

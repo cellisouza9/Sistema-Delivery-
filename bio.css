@@ -1,0 +1,632 @@
+/* =========================================================== */
+/* Celly — LINK NA BIO (Instagram)                                */
+/* Mesma paleta e tipografia do site principal                  */
+/* =========================================================== */
+:root {
+    --roxo: #7C3AED;
+    --roxo-claro: #8B5CF6;
+    --roxo-escuro: #5B21B6;
+    --roxo-fraco: #EDE9FE;
+    --roxo-hero: #5A0891;
+    --branco: #FFFFFF;
+    --cinza-claro: #F8F9FA;
+    --cinza-borda: #E5E7EB;
+    --cinza-texto: #4B5563;
+    --preto-texto: #1F2937;
+    --azul-claro: #E8F0FE;
+    --font: 'Nunito', sans-serif;
+    --font-titulo: 'Fraunces', serif;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html, body {
+    height: 100%;
+    min-height: 100vh;
+    min-height: 100dvh;
+}
+
+body {
+    font-family: var(--font);
+    color: var(--preto-texto);
+    background: var(--azul-claro);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 16px 18px 30px;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+/* bolhas decorativas de fundo */
+body::before, body::after {
+    content: '';
+    position: fixed;
+    border-radius: 50%;
+    background: rgba(124, 58, 237, 0.08);
+    z-index: 0;
+}
+body::before { width: 320px; height: 320px; top: -220px; left: -140px; }
+body::after { width: 420px; height: 420px; bottom: -260px; right: -180px; background: rgba(45, 114, 247, 0.10); }
+
+@media (max-width: 480px) {
+    body::before { width: 160px; height: 160px; top: -110px; left: -70px; }
+    body::after { width: 200px; height: 200px; bottom: -130px; right: -90px; }
+}
+
+/* =========================================================== */
+/* WRAPPER PRINCIPAL - AJUSTADO PARA NÃO CORTAR CONTEÚDO       */
+/* =========================================================== */
+.bio-wrapper {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 420px;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 8px;
+}
+
+/* =========================================================== */
+/* CABEÇALHO / LOGO                                             */
+/* =========================================================== */
+.bio-logo {
+    width: clamp(70px, 13vh, 130px);
+    height: clamp(70px, 13vh, 130px);
+    border-radius: 0;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: none;
+    border: none;
+    margin-bottom: clamp(4px, 1vh, 10px);
+    overflow: visible;
+    flex-shrink: 0;
+}
+
+.bio-logo img {
+    width: 100%;
+    height: auto;
+    max-width: 140px;
+    max-height: clamp(60px, 11vh, 116px);
+    object-fit: contain;
+    display: block;
+}
+
+.bio-nome {
+    font-family: var(--font-titulo);
+    color: var(--roxo-escuro);
+    font-size: clamp(1.1rem, 2.8vh, 1.7rem);
+    font-weight: 700;
+    margin-bottom: clamp(2px, 0.5vh, 6px);
+    flex-shrink: 0;
+}
+
+.bio-tagline {
+    color: var(--cinza-texto);
+    font-size: clamp(0.7rem, 1.6vh, 0.9rem);
+    font-weight: 600;
+    margin-bottom: clamp(8px, 1.8vh, 18px);
+    flex-shrink: 0;
+}
+
+/* =========================================================== */
+/* BOTÕES EMPILHADOS                                            */
+/* =========================================================== */
+.bio-links {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: clamp(6px, 1.2vh, 10px);
+    margin-bottom: clamp(8px, 1.5vh, 16px);
+    flex: 0 1 auto;
+}
+
+.bio-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    background: var(--branco);
+    color: var(--preto-texto);
+    text-decoration: none;
+    padding: clamp(10px, 1.6vh, 14px) 16px;
+    border-radius: 16px;
+    font-weight: 700;
+    font-size: clamp(0.8rem, 1.8vh, 1rem);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+    border: none;
+    cursor: pointer;
+    font-family: var(--font);
+    transition: transform 0.2s, box-shadow 0.2s;
+    text-align: left;
+    flex-shrink: 0;
+    min-height: clamp(48px, 7vh, 60px);
+}
+.bio-link:hover, .bio-link:active {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 28px rgba(0,0,0,0.20);
+}
+
+.bio-link-icon {
+    width: clamp(32px, 5vh, 44px);
+    height: clamp(32px, 5vh, 44px);
+    flex-shrink: 0;
+    border-radius: 50%;
+    background: var(--roxo-fraco);
+    color: var(--roxo);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    background-size: cover;
+    background-position: center;
+}
+
+.bio-link-icon.tem-elemento {
+    width: clamp(42px, 6.5vh, 62px);
+    height: clamp(42px, 6.5vh, 62px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.18);
+}
+
+.bio-link-icon img, .bio-ia-msg-avatar img {
+    width: 78%;
+    height: 78%;
+    object-fit: contain;
+}
+
+.bio-link-texto {
+    flex: 1;
+    min-width: 0;
+}
+.bio-link-texto strong {
+    display: block;
+    font-size: clamp(0.85rem, 1.8vh, 0.98rem);
+}
+.bio-link-texto span {
+    display: block;
+    font-size: clamp(0.65rem, 1.4vh, 0.78rem);
+    font-weight: 500;
+    color: var(--cinza-texto);
+    margin-top: 1px;
+}
+
+.bio-link-seta {
+    width: 28px;
+    height: 28px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background: var(--cinza-claro);
+    color: var(--roxo);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75rem;
+    transition: all 0.2s;
+}
+.bio-link:hover .bio-link-seta { background: var(--roxo); color: var(--branco); transform: translateX(2px); }
+
+/* Destaque especial para o botão da IA */
+.bio-link-ia {
+    background: var(--roxo);
+    color: var(--branco);
+}
+.bio-link-ia .bio-link-icon {
+    background: rgba(255,255,255,0.18);
+    color: var(--branco);
+    width: clamp(42px, 6.5vh, 60px);
+    height: clamp(42px, 6.5vh, 60px);
+}
+.bio-link-ia .bio-link-icon img { width: 92%; height: 92%; }
+.bio-link-ia .bio-link-texto span { color: rgba(255,255,255,0.8); }
+.bio-link-ia .bio-link-seta { background: rgba(255,255,255,0.18); color: var(--branco); transition: transform 0.25s; }
+.bio-link-ia:hover .bio-link-seta { background: rgba(255,255,255,0.3); color: var(--branco); transform: none; }
+.bio-link-ia.active .bio-link-seta { transform: rotate(180deg); }
+
+/* =========================================================== */
+/* PAINEL DA IA (SIMPLES, EMBUTIDO NA PÁGINA)                   */
+/* =========================================================== */
+.bio-ia-painel {
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    margin-top: -4px;
+    margin-bottom: 0;
+}
+.bio-ia-painel.aberto {
+    max-height: 600px;
+    margin-bottom: 12px;
+    overflow-y: auto;
+}
+
+.bio-ia-card {
+    background: var(--branco);
+    border-radius: 20px;
+    padding: 16px;
+    box-shadow: 0 10px 24px rgba(0,0,0,0.15);
+    text-align: left;
+}
+
+.bio-ia-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+.bio-ia-header .bio-link-icon { background: var(--roxo-fraco); color: var(--roxo); }
+.bio-ia-header strong { font-size: 0.9rem; display: block; }
+.bio-ia-header span { font-size: 0.7rem; color: var(--cinza-texto); }
+
+.bio-ia-mensagens {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 12px;
+    max-height: 320px;
+    overflow-y: auto;
+    padding-right: 4px;
+}
+
+.bio-ia-msg {
+    display: flex;
+    gap: 8px;
+    align-items: flex-start;
+}
+.bio-ia-msg-avatar {
+    width: 26px; height: 26px;
+    border-radius: 50%;
+    background: var(--roxo-fraco);
+    color: var(--roxo);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 0.65rem;
+    flex-shrink: 0;
+}
+.bio-ia-msg p {
+    background: var(--cinza-claro);
+    padding: 8px 12px;
+    border-radius: 12px;
+    font-size: 0.82rem;
+    line-height: 1.5;
+    color: var(--preto-texto);
+    word-wrap: break-word;
+}
+.bio-ia-msg-user { flex-direction: row-reverse; }
+.bio-ia-msg-user .bio-ia-msg-avatar { background: var(--roxo); color: var(--branco); }
+.bio-ia-msg-user p { background: var(--roxo-fraco); }
+
+.bio-ia-opcoes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 8px;
+}
+.bio-ia-opcao {
+    background: var(--roxo-fraco);
+    color: var(--roxo-escuro);
+    border: none;
+    padding: 7px 14px;
+    border-radius: 40px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    font-family: var(--font);
+    cursor: pointer;
+    transition: all 0.2s;
+    flex: 0 1 auto;
+}
+.bio-ia-opcao:hover { background: var(--roxo); color: var(--branco); }
+
+.bio-ia-cta {
+    display: inline-block;
+    margin-top: 2px;
+    background: var(--roxo);
+    color: var(--branco);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.78rem;
+    padding: 8px 14px;
+    border-radius: 40px;
+}
+
+/* =========================================================== */
+/* ANIMAÇÃO DE DIGITAÇÃO (PONTINHOS)                            */
+/* =========================================================== */
+.bio-ia-msg-digitando {
+    display: flex;
+    gap: 8px;
+    align-items: flex-start;
+}
+
+.bio-ia-msg-digitando-dots {
+    background: var(--cinza-claro);
+    padding: 10px 16px;
+    border-radius: 12px;
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    min-width: 44px;
+}
+
+.bio-ia-msg-digitando-dots span {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--roxo);
+    display: inline-block;
+    animation: dotPulse 1.4s infinite ease-in-out both;
+}
+
+.bio-ia-msg-digitando-dots span:nth-child(1) { animation-delay: -0.32s; }
+.bio-ia-msg-digitando-dots span:nth-child(2) { animation-delay: -0.16s; }
+.bio-ia-msg-digitando-dots span:nth-child(3) { animation-delay: 0s; }
+
+@keyframes dotPulse {
+    0%, 80%, 100% {
+        transform: scale(0.8);
+        opacity: 0.5;
+    }
+    40% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+}
+
+.bio-ia-msg-digitando .bio-ia-msg-avatar {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background: var(--roxo-fraco);
+    color: var(--roxo);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.65rem;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+.bio-ia-msg-digitando .bio-ia-msg-avatar img {
+    width: 78%;
+    height: 78%;
+    object-fit: contain;
+}
+
+/* Desabilitar botões enquanto processa */
+.bio-ia-opcao:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transform: none !important;
+}
+
+/* Melhorar scroll do painel */
+#bioPainelIA {
+    transition: max-height 0.4s ease;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+}
+
+/* Botão de voltar ao menu inicial */
+.bio-ia-voltar-wrap {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 4px;
+}
+
+.bio-ia-voltar {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: transparent;
+    border: 1.5px solid var(--roxo-fraco);
+    color: var(--roxo-escuro);
+    padding: 6px 12px;
+    border-radius: 40px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    font-family: var(--font);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.bio-ia-voltar:hover {
+    background: var(--roxo-fraco);
+}
+
+.bio-ia-voltar i {
+    font-size: 0.7rem;
+}
+
+/* Campo pra o cliente digitar a mensagem */
+.bio-ia-input-wrap {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid var(--cinza-claro);
+}
+
+.bio-ia-input {
+    flex: 1;
+    border: 1.5px solid var(--cinza-claro);
+    background: var(--cinza-claro);
+    border-radius: 40px;
+    padding: 8px 14px;
+    font-size: 0.8rem;
+    font-family: var(--font);
+    color: var(--preto-texto);
+    outline: none;
+    transition: border-color 0.2s;
+    min-width: 0;
+}
+
+.bio-ia-input:focus {
+    border-color: var(--roxo);
+    background: var(--branco);
+}
+
+.bio-ia-enviar {
+    flex-shrink: 0;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    border: none;
+    background: var(--roxo);
+    color: var(--branco);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 0.8rem;
+    transition: background 0.2s;
+}
+
+.bio-ia-enviar:hover {
+    background: var(--roxo-escuro);
+}
+
+.bio-ia-enviar:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* =========================================================== */
+/* RODAPÉ                                                       */
+/* =========================================================== */
+.bio-footer {
+    color: var(--cinza-texto);
+    font-size: clamp(0.6rem, 1.4vh, 0.78rem);
+    line-height: 1.5;
+    flex-shrink: 0;
+    margin-top: auto;
+    padding-top: clamp(4px, 1vh, 10px);
+    width: 100%;
+}
+.bio-footer a { color: var(--roxo); text-decoration: underline; }
+
+/* =========================================================== */
+/* RESPONSIVIDADE EXTRA PARA TELAS MUITO PEQUENAS              */
+/* =========================================================== */
+@media (max-height: 700px) {
+    body {
+        padding: 10px 14px 16px;
+    }
+
+    .bio-logo {
+        width: clamp(55px, 10vh, 90px);
+        height: clamp(55px, 10vh, 90px);
+    }
+
+    .bio-logo img {
+        max-height: clamp(48px, 8.5vh, 80px);
+    }
+
+    .bio-link {
+        padding: clamp(6px, 1.2vh, 10px) 14px;
+        min-height: clamp(40px, 5.5vh, 50px);
+        gap: 10px;
+        border-radius: 14px;
+    }
+
+    .bio-link-icon {
+        width: clamp(28px, 4vh, 36px);
+        height: clamp(28px, 4vh, 36px);
+    }
+
+    .bio-link-texto strong {
+        font-size: clamp(0.75rem, 1.5vh, 0.85rem);
+    }
+
+    .bio-link-texto span {
+        font-size: clamp(0.6rem, 1.2vh, 0.7rem);
+    }
+
+    .bio-link-seta {
+        width: 24px;
+        height: 24px;
+        font-size: 0.65rem;
+    }
+
+    .bio-ia-painel.aberto {
+        max-height: 420px;
+    }
+
+    .bio-ia-mensagens {
+        max-height: 220px;
+    }
+}
+
+@media (max-width: 380px) {
+    body {
+        padding: 8px 10px 14px;
+    }
+
+    .bio-logo {
+        width: clamp(50px, 9vh, 80px);
+        height: clamp(50px, 9vh, 80px);
+    }
+
+    .bio-logo img {
+        max-width: 100px;
+        max-height: clamp(42px, 7.5vh, 70px);
+    }
+
+    .bio-link {
+        padding: clamp(5px, 1vh, 8px) 12px;
+        min-height: clamp(36px, 4.5vh, 44px);
+        gap: 8px;
+        font-size: clamp(0.7rem, 1.4vh, 0.8rem);
+        border-radius: 12px;
+    }
+
+    .bio-link-icon {
+        width: clamp(24px, 3.5vh, 32px);
+        height: clamp(24px, 3.5vh, 32px);
+    }
+
+    .bio-link-icon.tem-elemento {
+        width: clamp(34px, 5vh, 44px);
+        height: clamp(34px, 5vh, 44px);
+    }
+
+    .bio-nome {
+        font-size: clamp(0.9rem, 2.2vh, 1.2rem);
+    }
+
+    .bio-tagline {
+        font-size: clamp(0.6rem, 1.3vh, 0.75rem);
+        margin-bottom: clamp(4px, 1vh, 10px);
+    }
+
+    .bio-links {
+        gap: clamp(4px, 0.8vh, 6px);
+        margin-bottom: clamp(4px, 1vh, 10px);
+    }
+}
+
+/* Scroll bar personalizada */
+.bio-ia-mensagens::-webkit-scrollbar,
+#bioPainelIA::-webkit-scrollbar {
+    width: 4px;
+}
+
+.bio-ia-mensagens::-webkit-scrollbar-track,
+#bioPainelIA::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.bio-ia-mensagens::-webkit-scrollbar-thumb,
+#bioPainelIA::-webkit-scrollbar-thumb {
+    background: var(--roxo-fraco);
+    border-radius: 4px;
+}
+
+.bio-ia-mensagens::-webkit-scrollbar-thumb:hover,
+#bioPainelIA::-webkit-scrollbar-thumb:hover {
+    background: var(--roxo-claro);
+}
