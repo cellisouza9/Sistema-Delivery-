@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Finalize a contratação do seu plano de delivery da Celly Sistemas.">
+<title>Finalizar contratação | Celly Sistemas</title>
+<link rel="icon" type="image/png" href="portifolio-img/img/favicon-celly.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="carrinho.css?v=1">
+</head>
+<body>
+
+<header class="cart-header">
+  <div class="cart-header-inner">
+    <a href="index.html" class="cart-logo">
+      <img src="portifolio-img/img/logo celly1.png" alt="Celly Sistemas">
+    </a>
+    <div class="cart-steps">
+      <span class="cart-step active">Carrinho</span>
+      <span class="cart-step-bar"><span></span></span>
+      <span class="cart-step">Falar no WhatsApp</span>
+    </div>
+    <span class="cart-badge-seguro"><i class="fas fa-shield-alt"></i> Sem fidelidade</span>
+  </div>
+</header>
+
+<main class="cart-main">
+  <div class="cart-grid">
+
+    <!-- COLUNA ESQUERDA -->
+    <div class="cart-col-principal">
+      <h1>Seu plano no <span>carrinho</span>:</h1>
+
+      <div class="cart-produto">
+        <div class="cart-produto-topo">
+          <div class="cart-produto-info">
+            <span class="cart-produto-icon"><i class="fas fa-utensils"></i></span>
+            <div>
+              <span class="cart-produto-badge" id="cartBadge">MAIS ESCOLHIDO</span>
+              <h2 id="cartNome">Completo</h2>
+              <p id="cartDesc">O sistema completo para gerenciar seu negócio de delivery</p>
+            </div>
+          </div>
+          <div class="cart-produto-preco">
+            <span class="cart-preco-atual"><span id="cartPreco">89,90</span><small id="cartPrecoSufixo">/mês</small></span>
+          </div>
+        </div>
+
+        <div class="cart-ciclo">
+          <span class="cart-ciclo-label">Ciclo de pagamento</span>
+          <div class="cart-ciclo-opcoes">
+            <button type="button" class="cart-ciclo-btn active" data-ciclo="mensal">Mensal</button>
+            <button type="button" class="cart-ciclo-btn" data-ciclo="anual">Anual <span>-15%</span></button>
+          </div>
+        </div>
+
+        <div class="cart-instalacao">
+          <i class="fas fa-tools"></i>
+          <span>Taxa de instalação: <strong id="cartInstalacao">R$ 150,00</strong> (paga uma única vez, junto com o 1º pagamento)</span>
+        </div>
+
+        <div class="cart-inclui">
+          <span class="cart-inclui-titulo">O que está incluso:</span>
+          <ul id="cartBeneficios"></ul>
+        </div>
+      </div>
+
+      <a href="index.html#planosSection" class="cart-voltar"><i class="fas fa-arrow-left"></i> Voltar e escolher outro plano</a>
+    </div>
+
+    <!-- RESUMO DO PEDIDO -->
+    <aside class="cart-resumo">
+      <h3>Resumo do pedido</h3>
+
+      <div class="cart-resumo-linha">
+        <div>
+          <strong id="resumoNome">Completo</strong>
+          <span id="resumoCiclo">Pago mensalmente</span>
+        </div>
+        <span id="resumoPreco">R$ 89,90</span>
+      </div>
+
+      <div class="cart-resumo-linha">
+        <div>
+          <strong>Instalação</strong>
+          <span>Pagamento único</span>
+        </div>
+        <span id="resumoInstalacao">R$ 150,00</span>
+      </div>
+
+      <div class="cart-resumo-economia" id="resumoEconomiaLinha" hidden>
+        <span>Você economiza</span>
+        <strong id="resumoEconomia">R$ 0,00/ano</strong>
+      </div>
+
+      <div class="cart-resumo-total">
+        <span>Total hoje</span>
+        <strong id="resumoTotal">R$ 239,90</strong>
+      </div>
+
+      <button type="button" id="cartContinuar" class="cart-btn-continuar">
+        <i class="fab fa-whatsapp"></i> Continuar no WhatsApp
+      </button>
+
+      <p class="cart-resumo-nota"><i class="fas fa-lock"></i> Sem fidelidade — cancele quando quiser.</p>
+    </aside>
+
+  </div>
+</main>
+
+<script src="carrinho-delivery.js?v=1"></script>
+</body>
+</html>
