@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Celly Sistemas - Soluções para Microempreendedores</title>
+<meta name="google-site-verification" content="googlee667fd66de49d726" />
+<link rel="icon" type="image/png" href="portifolio-img/img/favicon-celly.png">
+
+<!-- CSS -->
+<link rel="stylesheet" href="estilo.css">
+    
+<!-- Bootstrap 5 -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- ======================================== -->
+<!-- HEADER / NAVBAR Celly (APENAS UMA)       -->
+<!-- ======================================== -->
+<nav class="navbar-m33">
+<div class="container">
+<a href="portfolio.html" class="logo-m33">
+<img src="portifolio-img/img/logo celly1.png" alt="Celly Logo" class="logo-img">
+</a>
+
+<!-- BOTÃO HAMBURGER -->
+<button class="menu-toggle" id="menuToggle">
+<i class="fas fa-bars"></i></button>
+<ul class="nav-menu-m33" id="navMenu">
+<li class="nav-link"><a href="#home"><h1 data-name="HOME">HOME</h1></a></li>
+<li class="nav-link"><a href="portfolio.html"><h1 data-name="SOBRE">SOBRE</h1></a></li>
+<li class="nav-link"><a href="portfolio.html#projetos"><h1 data-name="SISTEMAS">SISTEMAS</h1></a></li>
+<li class="nav-link"><a href="automacao-chatbot.html" target="_blank" rel="noopener"><h1 data-name="CHATBOT">CHATBOT</h1></a></li>
+<li class="nav-link"><a href="#contato"><h1 data-name="CONTATO">CONTATO</h1></a></li>
+</ul>
+</div>
+</nav>
+
+<!-- ======================================== -->
+<!-- HOME SECTION (HERO)                     -->
+<!-- ======================================== -->
+<section id="home" class="hero-section">
+<div class="container">
+<div class="hero-wrapper">
+<div class="hero-content">
+<div class="hero-badge">
+<span>Solução completa para seu negócio</span></div>
+<h1 class="hero-title">Tudo o que seu <span class="highlight">bar ou restaurante</span> precisa, em um único sistema</h1>
+<p class="hero-description">Mesas, pedidos, estoque e caixa organizados num só lugar — sem mensalidade abusiva e sem letras miúdas.</p>
+</div>
+<div class="hero-imagem">
+<img src="portifolio-img/comercial/PC comercial.png" alt="Sistema Celly" class="hero-imagem-img"></div>
+</div>
+</div>
+</section>
+
+<!-- ======================================== -->
+<!-- CARROSSEL                                -->
+<!-- ======================================== -->
+<section class="carrossel-section">
+<!-- ELEMENTO DECORATIVO DE FUNDO (COLOQUE AQUI, ANTES DO CONTAINER) -->
+<img src="portifolio-img/identidade-visual/demostração.png" alt="" class="carrossel-decor" aria-hidden="true">
+<!-- ELEMENTO DECORATIVO DE FUNDO - DIREITA (SEM ESPELHAMENTO) -->
+<img src="portifolio-img/identidade-visual/demostração invertida.png" alt="" class="carrossel-decor-right" aria-hidden="true">
+
+<div class="container">
+<div class="section-title">
+<h2>Como funciona o <span>sistema de delivery</span>?</h2>
+<p>Simples, rápido e sem complicação. Veja o passo a passo</p>
+</div>
+<!-- O RESTO DO SEU CARROSSEL CONTINUA AQUI -->
+<div class="slide-label">
+<i class="fas fa-hand-pointer"></i> Deslize para os lados <span>|</span> <i class="fas fa-arrow-right"></i>
+</div>
+<div class="carrossel-wrapper">
+<div class="phone-container" id="phoneWrapper">
+<div class="touch-area">
+<span class="arrow-left" id="prevBtn"><i class="fas fa-chevron-left"></i></span>
+<span class="arrow-right" id="nextBtn"><i class="fas fa-chevron-right"></i></span></div>
+<div class="carousel-behind" id="carouselBehind">
+<div class="carousel-slides" id="carouselSlides">
+<div class="carousel-slide"><img src="portifolio-img/carrosel/test6.png" alt="Imagem 1"></div>
+<div class="carousel-slide"><img src="portifolio-img/carrosel/burguer.png" alt="Imagem 2"></div>
+<div class="carousel-slide"><img src="portifolio-img/carrosel/sacola.png" alt="Imagem 3"></div>
+<div class="carousel-slide"><img src="portifolio-img/carrosel/visitante.png" alt="Imagem 4"></div>
+<div class="carousel-slide"><img src="portifolio-img/carrosel/meus pedidos.png" alt="Imagem 5"></div>
+<div class="carousel-slide"><img src="portifolio-img/carrosel/meus cupons.png" alt="Imagem 6"></div>
+<div class="carousel-slide"><img src="portifolio-img/carrosel/meus pagamentos.png" alt="Imagem 7"></div>
+<div class="carousel-slide"><img src="portifolio-img/carrosel/fidelidade.png" alt="Imagem 8"></div>
+<div class="carousel-slide"><img src="portifolio-img/carrosel/meus dados.png" alt="Imagem 9"></div>
+</div>
+</div>
+<img src="portifolio-img/carrosel/celular 4.png" alt="Celular" class="phone-image-overlay"></div>
+</div>
+<div class="dots-container" id="dotsContainer">
+<span class="dot active" data-index="0"></span>
+<span class="dot" data-index="1"></span>
+<span class="dot" data-index="2"></span>
+<span class="dot" data-index="3"></span>
+<span class="dot" data-index="4"></span>
+<span class="dot" data-index="5"></span>
+<span class="dot" data-index="6"></span>
+<span class="dot" data-index="7"></span>
+<span class="dot" data-index="8"></span>
+</div>
+</div>
+
+
+</section>
+
+<!-- ======================================== -->
+<!-- SEÇÃO: CARDÁPIO DIGITAL EXCLUSIVO       -->
+<!-- ======================================== -->
+<section class="cardapio-section">
+<div class="container">
+<div class="cardapio-grid">
+<div class="cardapio-texto">
+<h2>Transforme seu <span>cardápio físico</span> em <span>vendas online</span></h2>
+<p class="cardapio-desc">Seu cliente já pede tudo pelo celular. Com o cardápio da Celly, ele pede comida do mesmo jeito, sem app, sem taxa por pedido, sem burocracia.</p>
+<p class="cardapio-desc">Só um link. Você compartilha e já começa a vender.</p>
+<div class="cardapio-destaque">
+<i class="fas fa-chart-line"></i>Restaurantes com cardápio Celly vendem até 40% a mais.</div></div>
+<div class="cardapio-celular">
+<div class="cardapio-phone-container">
+<img src="portifolio-img/comercial/foto-comercial.png" alt="Cardápio Digital Celly" class="cardapio-phone-image">
+</div>
+</div>
+</div></div>
+</section>
+<!-- ======================================== -->
+<!-- SEÇÃO: AGILIZE SEU ATENDIMENTO          -->
+<!-- ======================================== -->
+<section class="agilize-section">
+<div class="container">
+<!-- TEXTO E BADGE -->
+<div class="agilize-content">
+<span class="agilize-badge">AUTOMAÇÃO INTELIGENTE</span>
+<h2>Agilize seu <span>atendimento</span> no <span>WhatsApp</span></h2>
+<p class="agilize-desc">Robô de pedidos que apresenta seu cardápio, atualiza e recupera seus clientes automaticamente.</p>
+</div>
+<!-- SEÇÃO DOS CELULARES -->
+<section class="agilize-section"> <!-- ou o nome da sua section -->
+<!-- 🟣 ELEMENTO DECORATIVO DO LADO ESQUERDO -->
+ <div class="agilize-decor-left">
+<img src="portifolio-img/identidade-visual/elementos.png" alt="Elemento Esquerdo" class="agilize-img-lateral">
+</div>
+ <!-- 🟣 ELEMENTO DECORATIVO DO LADO DIREITO -->
+  <div class="agilize-decor-right">
+<img src="portifolio-img/identidade-visual/elemento direito.png" alt="Elemento Direito" class="agilize-img-lateral">
+</div>
+<!-- 🟣 ELEMENTO DECORATIVO DO LADO DIREITO INFERIOR (Novo, que vai descer) -->
+<div class="agilize-decor-right direita-inferior">
+<img src="portifolio-img/identidade-visual/elemento novo.png" alt="Elemento Inferior" class="agilize-img-lateral">
+</div>
+</section>
+<!-- GRADE DE FEATURES (AQUI DENTRO DO CONTAINER!) -->
+<div class="agilize-features-grid">
+ <!-- PRIMEIRA FOTO (CHAT-BOT) -->
+<div class="agilize-chat-wrapper">
+<div class="agilize-imagem-wrapper">
+<img src="portifolio-img/comercial/chat bot.png" alt="Chat Bot Celly" class="agilize-imagem-chat">
+</div>
+</div>
+<!-- SEGUNDA E TERCEIRA FOTO (GALERIA) -->
+<div class="agilize-imagens-grid">
+<div class="agilize-imagem-wrapper">
+<img src="portifolio-img/comercial/chat personalizado.png" alt="Mensagens Personalizadas Celly" class="agilize-imagem">
+</div>
+<div class="agilize-imagem-wrapper">
+<img src="portifolio-img/comercial/notificação1.png" alt="Notificações Celly" class="agilize-imagem">
+</div>
+</div>
+</div> <!-- Fim da features-grid -->
+</div> <!-- Fim do container -->
+</section>
+
+      
+</section>
+
+<!-- ======================================== -->
+<!-- SISTEMA COMPLETO                         -->
+<!-- ======================================== -->
+<section class="sistema-completo-section">
+<div class="container">
+<div class="sistema-header">
+<span class="sistema-badge"> Sistema Completo</span>
+<h2>Tenha um <span>sistema completo</span> no seu <span>estabelecimento</span></h2>
+<p class="sistema-subtitle">Do PDV à automação com IA, tudo em um só lugar para você gerenciar seu negócio com inteligência.</p>
+</div>
+<div class="sistema-imagem-wrapper" id="sistemaImagem">
+<img src="portifolio-img/comercial/gestão.png" alt="PDV e Automação com IA Celly" class="sistema-imagem"></div>
+<div class="sistema-diferenciais">
+<div class="diferencial"><span class="diferencial-icon"></span><span>Tudo integrado em uma só plataforma</span></div>
+<div class="diferencial"><span class="diferencial-icon"></span><span>Sem mensalidade abusiva</span></div>
+<div class="diferencial"><span class="diferencial-icon">🎯</span><span>Suporte 24/7 especializado</span></div></div>
+<div class="sistema-cta">
+</section>
+
+
+<section class="categorias-section">
+<div class="categorias-container">
+<div class="categorias-wrapper">
+<div class="categorias-track" id="categoriasTrack">
+
+<div class="categoria-item">
+<div class="categoria-icone"><img src="portifolio-img/comercial/bar.png" alt="Bares e adegas"></div>
+<span>Bares e adegas</span>
+</div>
+
+<div class="categoria-item">
+<div class="categoria-icone"><img src="portifolio-img/comercial/restaurante.png" alt="Restaurantes"></div>
+<span>Restaurantes</span>
+</div>
+
+<div class="categoria-item">
+<div class="categoria-icone"><img src="portifolio-img/comercial/burguer.png" alt="Hamburguerias"></div>
+<span>Hamburguerias</span>
+</div>
+
+<div class="categoria-item">
+<div class="categoria-icone"><img src="portifolio-img/comercial/sorveteria.png" alt="Sorveterias"></div>
+<span>Sorveterias</span>
+</div>
+
+<div class="categoria-item">
+<div class="categoria-icone"><img src="portifolio-img/comercial/doceria.png" alt="Docerias"></div>
+<span>Docerias</span>
+</div>
+
+<div class="categoria-item">
+<div class="categoria-icone"><img src="portifolio-img/comercial/pizzaria.png" alt="Pizzarias"></div>
+<span>Pizzarias</span>
+</div>
+
+</div>
+</div>
+</div>
+</section>
+<!-- ======================================== -->
+<!-- KDS                                      -->
+<!-- ======================================== -->
+<section class="kds-section">
+<div class="container">
+<div class="kds-grid">
+<div class="kds-texto">
+<span class="kds-badge"> KDS - Kitchen Display System</span>
+<h2>Nunca mais <span>perca um pedido</span> na cozinha</h2>
+<p class="kds-desc">Escale sua operação com o <strong>Kitchen Display System</strong>. Sua equipe acompanha tudo em <strong>tempo real</strong>, sem risco de perder comandas e atrasar pedidos.</p>
+<div class="kds-features">
+<div class="kds-feature"><i class="fas fa-clock"></i><div><strong>Alerta de atraso</strong><p>Notificações automáticas para pedidos que estão demorando</p></div></div>
+<div class="kds-feature"><i class="fas fa-boxes"></i><div><strong>Preparo em lote ou individual</strong><p>Flexibilidade para organizar a produção</p></div></div>
+<div class="kds-feature"><i class="fas fa-highlighter"></i><div><strong>Observações em destaque</strong><p>Informações importantes do pedido ficam visíveis</p></div></div>
+<div class="kds-feature"><i class="fas fa-truck"></i><div><strong>KDS de despacho</strong><p>Gerencie a saída dos pedidos com agilidade</p></div></div>
+<div class="kds-feature"><i class="fas fa-ban"></i><div><strong>Aviso de cancelamento</strong><p>Cancelamentos são comunicados instantaneamente</p></div></div>
+<div class="kds-feature"><i class="fas fa-desktop"></i><div><strong>Múltiplos monitores</strong><p>Adapte o sistema para diferentes estações</p></div></div>
+</div>
+</div>
+<div class="kds-imagem-wrapper">
+    <img src="portifolio-img/comercial/kds.png" alt="KDS Celly" class="kds-imagem kds-imagem-desktop">
+    <img src="portifolio-img/comercial/edição 5.png" alt="KDS Celly" class="kds-imagem kds-imagem-mobile">
+</div>
+</div>
+</div>
+</section>
+
+<!-- ======================================== -->
+<!-- GESTÃO DE ENTREGAS                       -->
+<!-- ======================================== -->
+ <!-- 🟣 ELEMENTO NOVO - POR CIMA DO ESQUERDO -->
+<div class="gestao-decor-left-2">
+    <img src="portifolio-img/identidade-visual/elemento poc.png" alt="Elemento Novo" class="gestao-img-lateral">
+</div>
+
+<section class="gestao-entregas-section">
+<!-- 🟣 ELEMENTO DECORATIVO LADO ESQUERDO -->
+<div class="gestao-decor-left">
+<img src="portifolio-img/identidade-visual/elemento 9.png" alt="Elemento Esquerdo" class="gestao-img-lateral">
+</div>
+
+<!-- 🟣 ELEMENTO DECORATIVO LADO DIREITO -->
+<div class="gestao-decor-right">
+<img src="portifolio-img/identidade-visual/CELLY elementos-09.png" alt="Elemento Direito" class="gestao-img-lateral">
+</div>
+
+<div class="container">
+<div class="gestao-entregas-content">
+<span class="gestao-entregas-badge"> Organização</span>
+<h2>Gestão e <span>app de entregas</span></h2>
+<p class="gestao-entregas-desc">Sua operação de delivery bem organizada com aplicativo de motoboy e relatórios detalhados.</p>
+<div class="gestao-entregas-features-grid">
+<div class="gestao-entregas-feature"><i class="fas fa-file-invoice"></i><div><strong>Relatórios de taxas de entrega</strong><p>Controle completo das taxas e comissões</p></div></div>
+<div class="gestao-entregas-feature"><i class="fas fa-tasks"></i><div><strong>Atribuição de pedidos</strong><p>Distribua pedidos de forma inteligente</p></div></div>
+<div class="gestao-entregas-feature"><i class="fas fa-mobile-alt"></i><div><strong>App entregador</strong><p>App exclusivo para seus motoboys</p></div></div>
+<div class="gestao-entregas-feature"><i class="fas fa-route"></i><div><strong>Rotas via Waze e Google Maps</strong><p>Navegação integrada para entregas mais rápidas</p></div></div>
+</div>
+<div class="gestao-entregas-imagem-wrapper" id="gestaoEntregasImagem">
+<img src="portifolio-img/comercial/entrega.png" alt="Gestão de Entregas Celly" class="gestao-entregas-imagem">
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ======================================== -->
+<!-- CARDÁPIO GRÁTIS                         -->
+<!-- ======================================== -->
+<section class="cardapio-gratis-section" id="cardapioGratisSection">
+<div class="container">
+<div class="cardapio-gratis-header">
+<span class="cardapio-gratis-badge">🧪 Teste 100% gratuito</span>
+<h2>Vamos começar seu <span>cardápio digital</span> grátis</h2>
+<p class="cardapio-gratis-sub">Teste <strong>7 dias com tudo liberado</strong> – sem cartão, sem fidelidade.</p>
+</div>
+<div class="cardapio-gratis-grid">
+<div class="cardapio-gratis-card">
+<ul class="cardapio-gratis-benefits">
+<li>Alta conversão</li>
+<li>Suporte humano</li>
+<li>Migração fácil</li>
+<li>Sem fidelidade</li>
+</ul>
+<div class="cardapio-gratis-no-card"><span>💳</span>Não exigimos cartão. Todas as funções por <strong>7 dias</strong>!</div>
+<form class="cardapio-gratis-form">
+<div class="cardapio-gratis-form-group"><input type="text" placeholder="Nome da loja" /></div>
+<div class="cardapio-gratis-form-group"><select><option value="" disabled selected>Qual seu segmento?</option><option value="restaurante">Restaurante</option><option value="pizzaria">Pizzaria</option><option value="hamburgueria">Hamburgueria</option><option value="cafeteria">Cafeteria</option><option value="doceria">Doceria</option><option value="outro">Outro</option></select></div>
+<div class="cardapio-gratis-form-group"><input type="tel" placeholder="WhatsApp da sua loja" /></div>
+<div class="cardapio-gratis-form-row">
+<div class="cardapio-gratis-form-group"><input type="email" placeholder="Seu e-mail" /></div>
+<div class="cardapio-gratis-form-group"><input type="password" placeholder="Senha (mín. 8 caracteres)" /></div>
+</div>
+<button type="submit" class="btn-cardapio-gratis"> Quero meu cardápio grátis</button>
+</form>
+<p class="cardapio-gratis-terms">Ao prosseguir você concorda com os <a href="#">termos de uso</a>.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ======================================== -->
+<!-- FUNCIONALIDADES                          -->
+<!-- ======================================== -->
+<section class="funcionalidades-section">
+<div class="container">
+<div class="funcionalidades-header">
+<span class="funcionalidades-badge">Soluções para sua operação</span><h2>Funcionalidades para <span>turbinar</span> seu negócio</h2>
+<p class="funcionalidades-sub">Tudo o que sua operação precisa para vender mais, em um só lugar.</p>
+</div>
+<div class="funcionalidades-grid">
+<div class="funcionalidade-coluna">
+<div class="funcionalidade-item"><span class="funcionalidade-check">✓</span>Robô de pedidos</div>
+<div class="funcionalidade-item"><span class="funcionalidade-check">✓</span>Pedidos e produtos ilimitados</div>
+<div class="funcionalidade-item"><span class="funcionalidade-check">✓</span>Impressão automática</div>
+<div class="funcionalidade-item"><span class="funcionalidade-check">✓</span>Recuperador de vendas</div>
+<div class="funcionalidade-item"><span class="funcionalidade-check">✓</span>Integração iFood</div>
+<div class="funcionalidade-item"><span class="funcionalidade-check">✓</span>Controle de caixa</div>
+<div class="funcionalidade-item"><span class="funcionalidade-check">✓</span>Relatórios detalhados</div>
+ <div class="funcionalidade-item"><span class="funcionalidade-check">✓</span>CRM - Cadastro de clientes</div>
+<div class="funcionalidade-item"><span class="funcionalidade-check">✓</span>Cashback e cupons</div>
+</div>
+<div class="funcionalidade-coluna">
+<div class="funcionalidade-item"><span class="funcionalidade-check">✓</span>Pix Estático - Sem taxas!</div>
+<div class="funcionalidade-item"><span class="funcionalidade-check">✓</span>Pix Automatizado</div>
+<div class="funcionalidade-item"><span class="funcionalidade-check">✓</span>Integração Asaas e Mercado Pago</div>
+<div class="funcionalidade-item"><span class="funcionalidade-check">✓</span>Cadastro de entregadores</div>
+<div class="funcionalidade-item"><span class="funcionalidade-check">✓</span>Gestor de área de entrega</div>
+<div class="funcionalidade-item"><span class="funcionalidade-check">✓</span>Venda por peso</div><div class="funcionalidade-item"><span class="funcionalidade-check">✓</span>Gestor de mesas</div>
+<div class="funcionalidade-item"><span class="funcionalidade-check">✓</span>Agendamento de pedidos</div>
+<div class="funcionalidade-item"><span class="funcionalidade-check">✓</span>Cadastro de funcionários</div>
+</div>
+<div class="funcionalidade-coluna">
+<div class="funcionalidade-item"><span class="funcionalidade-check">✓</span>App garçom</div>
+<div class="funcionalidade-item destaque-novidade"><span class="funcionalidade-check">✓</span>KDS <span class="novidade-badge">Novidade</span></div>
+<div class="funcionalidade-item"><span class="funcionalidade-check">✓</span>Integração NFC-e</div>
+<div class="funcionalidade-item"><span class="funcionalidade-check">✓</span>Suporte humano</div>
+<div class="funcionalidade-item"><span class="funcionalidade-check">✓</span>Estoque</div>
+<div class="funcionalidade-item"><span class="funcionalidade-check">✓</span>Gestão e criação de pedidos</div>
+<div class="funcionalidade-item"><span class="funcionalidade-check">✓</span>Cardápio QR Code</div>
+<div class="funcionalidade-item"><span class="funcionalidade-check">✓</span>Pixel de conversão Google e Meta</div>
+<div class="funcionalidade-item"><span class="funcionalidade-check">✓</span>Árvore de links</div>
+</div>
+</div>
+<div class="canais-bar">
+<span class="canais-titulo">Venda por múltiplos canais:</span>
+<span class="canais-item"><i class="fas fa-check-circle"></i> WhatsApp</span>
+<span class="canais-item"><i class="fas fa-check-circle"></i> Delivery próprio</span>
+<span class="canais-item"><i class="fas fa-check-circle"></i> Mesa e balcão</span>
+<span class="canais-item"><i class="fas fa-check-circle"></i> Pedidos agendados</span>
+<span class="canais-item"><i class="fas fa-check-circle"></i> iFood</span>
+</div>
+</div>
+</section>
+
+<!-- ======================================== -->
+<!-- SEÇÃO: PLANOS                           -->
+<!-- ======================================== -->
+<section class="planos-section" id="planosSection">
+    <div class="container">
+        <!-- CABEÇALHO -->
+        <div class="planos-header">
+            <span class="planos-badge">💎 Escolha o Plano</span>
+            <h2>Planos para <span>todos os negócios</span></h2>
+            <p class="planos-sub">Escolha o plano perfeito para o seu negócio de delivery. Comece pequeno e cresça conforme necessário.</p>
+        </div>
+
+        <!-- ABAS MENSAL / ANUAL -->
+        <div class="planos-tabs">
+            <button class="planos-tab active" data-plano="mensal">Mensal</button>
+            <button class="planos-tab" data-plano="anual">Anual <span class="planos-desconto">-15%</span></button>
+        </div>
+
+        <!-- CARDS DE PLANOS - MENSAL -->
+        <div class="planos-grid planos-mensal active" id="planosMensal">
+            <!-- PLANO 1 - CARDÁPIO WEB -->
+            <div class="plano-card">
+                <span class="plano-badge">Cardápio Web</span>
+                <div class="plano-preco">
+                    <span class="plano-moeda">R$</span>
+                    <span class="plano-valor">29,90</span>
+                    <span class="plano-periodo">/mês</span>
+                </div>
+                <div class="plano-instalacao">Instalação: <strong>R$ 49,90</strong> (única vez)</div>
+                <p class="plano-desc">Perfeito para começar sua jornada digital com um cardápio profissional online.</p>
+                <ul class="plano-features">
+                    <li><i class="fas fa-check"></i> Cardápio digital completo e profissional</li>
+                    <li><i class="fas fa-check"></i> Link WhatsApp integrado</li>
+                    <li><i class="fas fa-check"></i> Finalização de pedidos via WhatsApp</li>
+                    <li><i class="fas fa-check"></i> Design responsivo (funciona em celular)</li>
+                    <li><i class="fas fa-check"></i> Domínio personalizado</li>
+                    <li><i class="fas fa-check"></i> Fotos de produtos</li>
+                    <li><i class="fas fa-check"></i> Descrições e preços</li>
+                    <li><i class="fas fa-check"></i> Atualização do cardápio em tempo real</li>
+                </ul>
+                <div class="plano-ideal">
+                    <span class="plano-ideal-titulo">Ideal para:</span>
+                    <ul>
+                        <li>Restaurantes iniciando no digital</li>
+                        <li>Lanchonetes pequenas</li>
+                        <li>Quem quer começar com o mínimo</li>
+                    </ul>
+                </div>
+                <a href="carrinho-delivery.html?plano=cardapio-web" class="btn-plano">Contratar agora</a>
+            </div>
+
+            <!-- PLANO 2 - COMPLETO (DESTAQUE) -->
+            <div class="plano-card plano-destaque">
+                <span class="plano-badge">Completo</span>
+                <div class="plano-preco">
+                    <span class="plano-moeda">R$</span>
+                    <span class="plano-valor">89,90</span>
+                    <span class="plano-periodo">/mês</span>
+                </div>
+                <div class="plano-instalacao">Instalação: <strong>R$ 150,00</strong> (única vez)</div>
+                <p class="plano-desc">O sistema completo para gerenciar seu negócio de delivery com automação profissional.</p>
+                <ul class="plano-features">
+                    <li><i class="fas fa-check"></i> Tudo do Cardápio Web +</li>
+                    <li><i class="fas fa-check"></i> KDS <span class="novidade">Novidade</span> (Sistema de Cozinha Digital)</li>
+                    <li><i class="fas fa-check"></i> Gestão de entregas e entregadores</li>
+                    <li><i class="fas fa-check"></i> Painel administrativo completo</li>
+                    <li><i class="fas fa-check"></i> Dashboard de vendas em tempo real</li>
+                    <li><i class="fas fa-check"></i> Relatórios detalhados de faturamento</li>
+                    <li><i class="fas fa-check"></i> Gestão de estoque</li>
+                    <li><i class="fas fa-check"></i> CRM de clientes</li>
+                    <li><i class="fas fa-check"></i> App garçom (Comando Digital)</li>
+                    <li><i class="fas fa-check"></i> Impressora integrada</li>
+                    <li><i class="fas fa-check"></i> Até 5 entregadores</li>
+                    <li><i class="fas fa-check"></i> Notificações automáticas</li>
+                    <li><i class="fas fa-check"></i> Suporte por e-mail</li>
+                </ul>
+                <div class="plano-ideal">
+                    <span class="plano-ideal-titulo">Ideal para:</span>
+                    <ul>
+                        <li>Restaurantes em crescimento</li>
+                        <li>Lanchonetes com equipe</li>
+                        <li>Pizzarias</li>
+                        <li>Quem quer automação real</li>
+                    </ul>
+                </div>
+                <a href="carrinho-delivery.html?plano=completo" class="btn-plano">Contratar agora</a>
+            </div>
+
+            <!-- PLANO 3 - PREMIUM -->
+            <div class="plano-card">
+                <span class="plano-badge">Premium</span>
+                <div class="plano-preco">
+                    <span class="plano-moeda">R$</span>
+                    <span class="plano-valor">149,90</span>
+                    <span class="plano-periodo">/mês</span>
+                </div>
+                <div class="plano-instalacao">Instalação: <strong>R$ 300,00</strong> (única vez)</div>
+                <p class="plano-desc">Solução completa com integrações avançadas para expandir suas vendas em múltiplos canais.</p>
+                <ul class="plano-features">
+                    <li><i class="fas fa-check"></i> Tudo do Completo +</li>
+                    <li><i class="fas fa-check"></i> Integração iFood</li>
+                    <li><i class="fas fa-check"></i> Integração Uber Eats</li>
+                    <li><i class="fas fa-check"></i> Rota inteligente para entregas</li>
+                    <li><i class="fas fa-check"></i> Rastreamento GPS</li>
+                    <li><i class="fas fa-check"></i> Até 10+ entregadores</li>
+                    <li><i class="fas fa-check"></i> Dashboard analytics avançado</li>
+                    <li><i class="fas fa-check"></i> Relatórios exportáveis (Excel/PDF)</li>
+                    <li><i class="fas fa-check"></i> NFC/QR Code integrado</li>
+                    <li><i class="fas fa-check"></i> Pixel de conversão (Facebook/Google)</li>
+                    <li><i class="fas fa-check"></i> Suporte prioritário</li>
+                    <li><i class="fas fa-check"></i> Consultoria 1-a-1</li>
+                </ul>
+                <div class="plano-ideal">
+                    <span class="plano-ideal-titulo">Ideal para:</span>
+                    <ul>
+                        <li>Negócios que já vendem em vários canais</li>
+                        <li>Quem quer entregas mais rápidas e rastreáveis</li>
+                        <li>Redes com operação maior</li>
+                    </ul>
+                </div>
+                <a href="carrinho-delivery.html?plano=premium" class="btn-plano">Contratar agora</a>
+            </div>
+        </div>
+
+        <!-- CARDS DE PLANOS - ANUAL -->
+        <div class="planos-grid planos-anual" id="planosAnual">
+            <!-- PLANO 1 - CARDÁPIO WEB (ANUAL) -->
+            <div class="plano-card">
+                <span class="plano-badge">Cardápio Web</span>
+                <div class="plano-preco">
+                    <span class="plano-moeda">R$</span>
+                    <span class="plano-valor">25,42</span>
+                    <span class="plano-periodo">/mês</span>
+                </div>
+                <div class="plano-total-anual">Total: <strong>R$ 305,04</strong>/ano</div>
+                <div class="plano-instalacao">Instalação: <strong>R$ 49,90</strong> (única vez)</div>
+                <p class="plano-desc">Perfeito para começar sua jornada digital com um cardápio profissional online.</p>
+                <ul class="plano-features">
+                    <li><i class="fas fa-check"></i> Cardápio digital completo e profissional</li>
+                    <li><i class="fas fa-check"></i> Link WhatsApp integrado</li>
+                    <li><i class="fas fa-check"></i> Finalização de pedidos via WhatsApp</li>
+                    <li><i class="fas fa-check"></i> Design responsivo (funciona em celular)</li>
+                    <li><i class="fas fa-check"></i> Domínio personalizado</li>
+                    <li><i class="fas fa-check"></i> Fotos de produtos</li>
+                    <li><i class="fas fa-check"></i> Descrições e preços</li>
+                    <li><i class="fas fa-check"></i> Atualização do cardápio em tempo real</li>
+                </ul>
+                <div class="plano-ideal">
+                    <span class="plano-ideal-titulo">Ideal para:</span>
+                    <ul>
+                        <li>Restaurantes iniciando no digital</li>
+                        <li>Lanchonetes pequenas</li>
+                        <li>Quem quer começar com o mínimo</li>
+                    </ul>
+                </div>
+                <a href="carrinho-delivery.html?plano=cardapio-web" class="btn-plano">Contratar agora</a>
+            </div>
+
+            <!-- PLANO 2 - COMPLETO (ANUAL) -->
+            <div class="plano-card plano-destaque">
+                <span class="plano-badge">Completo</span>
+                <div class="plano-preco">
+                    <span class="plano-moeda">R$</span>
+                    <span class="plano-valor">76,42</span>
+                    <span class="plano-periodo">/mês</span>
+                </div>
+                <div class="plano-total-anual">Total: <strong>R$ 917,04</strong>/ano</div>
+                <div class="plano-instalacao">Instalação: <strong>R$ 150,00</strong> (única vez)</div>
+                <p class="plano-desc">O sistema completo para gerenciar seu negócio de delivery com automação profissional.</p>
+                <ul class="plano-features">
+                    <li><i class="fas fa-check"></i> Tudo do Cardápio Web +</li>
+                    <li><i class="fas fa-check"></i> KDS <span class="novidade">Novidade</span> (Sistema de Cozinha Digital)</li>
+                    <li><i class="fas fa-check"></i> Gestão de entregas e entregadores</li>
+                    <li><i class="fas fa-check"></i> Painel administrativo completo</li>
+                    <li><i class="fas fa-check"></i> Dashboard de vendas em tempo real</li>
+                    <li><i class="fas fa-check"></i> Relatórios detalhados de faturamento</li>
+                    <li><i class="fas fa-check"></i> Gestão de estoque</li>
+                    <li><i class="fas fa-check"></i> CRM de clientes</li>
+                    <li><i class="fas fa-check"></i> App garçom (Comando Digital)</li>
+                    <li><i class="fas fa-check"></i> Impressora integrada</li>
+                    <li><i class="fas fa-check"></i> Até 5 entregadores</li>
+                    <li><i class="fas fa-check"></i> Notificações automáticas</li>
+                    <li><i class="fas fa-check"></i> Suporte por e-mail</li>
+                </ul>
+                <div class="plano-ideal">
+                    <span class="plano-ideal-titulo">Ideal para:</span>
+                    <ul>
+                        <li>Restaurantes em crescimento</li>
+                        <li>Lanchonetes com equipe</li>
+                        <li>Pizzarias</li>
+                        <li>Quem quer automação real</li>
+                    </ul>
+                </div>
+                <a href="carrinho-delivery.html?plano=completo" class="btn-plano">Contratar agora</a>
+            </div>
+
+            <!-- PLANO 3 - PREMIUM (ANUAL) -->
+            <div class="plano-card">
+                <span class="plano-badge">Premium</span>
+                <div class="plano-preco">
+                    <span class="plano-moeda">R$</span>
+                    <span class="plano-valor">127,42</span>
+                    <span class="plano-periodo">/mês</span>
+                </div>
+                <div class="plano-total-anual">Total: <strong>R$ 1.529,04</strong>/ano</div>
+                <div class="plano-instalacao">Instalação: <strong>R$ 300,00</strong> (única vez)</div>
+                <p class="plano-desc">Solução completa com integrações avançadas para expandir suas vendas em múltiplos canais.</p>
+                <ul class="plano-features">
+                    <li><i class="fas fa-check"></i> Tudo do Completo +</li>
+                    <li><i class="fas fa-check"></i> Integração iFood</li>
+                    <li><i class="fas fa-check"></i> Integração Uber Eats</li>
+                    <li><i class="fas fa-check"></i> Rota inteligente para entregas</li>
+                    <li><i class="fas fa-check"></i> Rastreamento GPS</li>
+                    <li><i class="fas fa-check"></i> Até 10+ entregadores</li>
+                    <li><i class="fas fa-check"></i> Dashboard analytics avançado</li>
+                    <li><i class="fas fa-check"></i> Relatórios exportáveis (Excel/PDF)</li>
+                    <li><i class="fas fa-check"></i> NFC/QR Code integrado</li>
+                    <li><i class="fas fa-check"></i> Pixel de conversão (Facebook/Google)</li>
+                    <li><i class="fas fa-check"></i> Suporte prioritário</li>
+                    <li><i class="fas fa-check"></i> Consultoria 1-a-1</li>
+                </ul>
+                <div class="plano-ideal">
+                    <span class="plano-ideal-titulo">Ideal para:</span>
+                    <ul>
+                        <li>Negócios que já vendem em vários canais</li>
+                        <li>Quem quer entregas mais rápidas e rastreáveis</li>
+                        <li>Redes com operação maior</li>
+                    </ul>
+                </div>
+                <a href="carrinho-delivery.html?plano=premium" class="btn-plano">Contratar agora</a>
+            </div>
+        </div>
+
+        <!-- TERMOS E CONDIÇÕES -->
+        <div class="planos-termos">
+            <h4>📋 Termos e Condições</h4>
+            <ul>
+                <li>Após a confirmação do pagamento, seu sistema fica pronto e no ar em até 48 horas.</li>
+                <li>Todo plano inclui suporte técnico via WhatsApp e manutenção corretiva, sem custo extra.</li>
+                <li>Você testa grátis por 7 dias — a cobrança só começa depois desse período, sem compromisso.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+<!-- ======================================== -->
+<!-- FAQ                                      -->
+<!-- ======================================== -->
+<section class="faq-section">
+<div class="container">
+<div class="faq-header">
+<span class="faq-badge"> Tire suas dúvidas</span>
+<h2>Perguntas <span>frequentes</span></h2>
+<p class="faq-sub">Tudo o que você precisa saber antes de começar</p>
+</div>
+
+<div class="faq-accordion-grid">
+<!-- COLUNA 1 -->
+<div class="faq-accordion-coluna">
+<!-- ITEM 1 -->
+<div class="faq-accordion-item">
+<button class="faq-accordion-btn">
+<span class="faq-btn-icon"></span>
+Como recebo meus pedidos?
+<span class="faq-btn-toggle">+</span>
+</button>
+<div class="faq-accordion-content">
+<p>Você recebe os pedidos diretamente no seu WhatsApp, pelo painel administrativo e também por impressão automática na cozinha. Tudo em tempo real!</p>
+</div>
+</div>
+<!-- ITEM 2 -->
+<div class="faq-accordion-item">
+<button class="faq-accordion-btn">
+<span class="faq-btn-icon"></span>
+Como recebo pelo que foi vendido?
+<span class="faq-btn-toggle">+</span>
+</button>
+<div class="faq-accordion-content">
+<p>O valor cai diretamente na sua conta. Integramos com Asaas e Mercado Pago para que você receba na hora, sem burocracia.</p>
+</div>
+</div>
+<!-- ITEM 3 -->
+<div class="faq-accordion-item">
+<button class="faq-accordion-btn">
+<span class="faq-btn-icon"></span>
+O Cardapio.ai cobra taxa de comissão por venda?
+<span class="faq-btn-toggle">+</span>
+</button>
+<div class="faq-accordion-content">
+<p>Não! Somos contra comissões abusivas. Você paga apenas um valor fixo mensal, sem surpresas. Toda venda é 100% sua.</p>
+</div>
+</div>
+ <!-- ITEM 4 -->
+<div class="faq-accordion-item">
+<button class="faq-accordion-btn">
+<span class="faq-btn-icon"></span>
+Tenho multa de cancelamento?
+<span class="faq-btn-toggle">+</span>
+</button>
+<div class="faq-accordion-content">
+<p>Zero multa! Você pode cancelar quando quiser. Não acreditamos em prender nossos clientes.</p>
+</div>
+</div>
+ <!-- ITEM 5 -->
+<div class="faq-accordion-item">
+<button class="faq-accordion-btn">
+<span class="faq-btn-icon"></span>
+Tem limite de pedidos? E produtos?
+<span class="faq-btn-toggle">+</span>
+</button>
+<div class="faq-accordion-content">
+<p>Não! Pedidos e produtos são ilimitados. Seu negócio pode crescer sem restrições.</p>
+</div>
+</div>
+<!-- ITEM 6 -->
+<div class="faq-accordion-item">
+<button class="faq-accordion-btn">
+<span class="faq-btn-icon"></span>
+Tenho cardápio no iFood, consigo migrar?
+<span class="faq-btn-toggle">+</span>
+</button>
+<div class="faq-accordion-content">
+<p>Sim! Fazemos a migração completa do seu cardápio do iFood para o nosso sistema. Sem dor de cabeça.</p>
+</div>
+</div>
+</div>
+<!-- COLUNA 2 -->
+<div class="faq-accordion-coluna">
+ <!-- ITEM 7 -->
+<div class="faq-accordion-item">
+<button class="faq-accordion-btn">
+<span class="faq-btn-icon"></span>
+Posso editar meu cardápio?
+<span class="faq-btn-toggle">+</span>
+</button>
+<div class="faq-accordion-content">
+<p>Sim! Você edita preços, fotos, descrições e categorias quando quiser. Tudo no painel administrativo.</p>
+</div>
+</div>
+<!-- ITEM 8 -->
+<div class="faq-accordion-item">
+<button class="faq-accordion-btn">
+<span class="faq-btn-icon"></span>
+Vocês montam meu cardápio?
+<span class="faq-btn-toggle">+</span>
+</button>
+<div class="faq-accordion-content">
+<p>Sim! Nossa equipe monta todo o seu cardápio digital com fotos, descrições e preços. Você só precisa aprovar.</p>
+</div>
+</div>
+<!-- ITEM 9 -->
+<div class="faq-accordion-item">
+<button class="faq-accordion-btn">
+<span class="faq-btn-icon"></span>
+Tem limite de acessos? E funcionários?
+<span class="faq-btn-toggle">+</span> </button>
+<div class="faq-accordion-content">
+<p>Não! Cadastre quantos funcionários quiser. Cada um com seu nível de acesso personalizado.</p>
+</div>
+</div>
+<!-- ITEM 10 -->
+<div class="faq-accordion-item">
+<button class="faq-accordion-btn">
+<span class="faq-btn-icon"></span>
+Tem aplicativo?
+<span class="faq-btn-toggle">+</span>
+</button>
+<div class="faq-accordion-content">
+<p>Sim! Temos App Garçom para sua equipe e acesso completo pelo navegador do celular.</p>
+</div>
+</div>
+<!-- ITEM 11 -->
+<div class="faq-accordion-item">
+<button class="faq-accordion-btn">
+<span class="faq-btn-icon"></span>
+Tem emissão fiscal?
+<span class="faq-btn-toggle">+</span>
+</button>
+<div class="faq-accordion-content">
+<p>Sim! Integração com NFC-e e SAT para emissão de notas fiscais eletrônicas direto do sistema.</p>
+</div>
+</div>
+<!-- ITEM 12 -->
+<div class="faq-accordion-item">
+<button class="faq-accordion-btn">
+<span class="faq-btn-icon"></span>
+Ainda não tenho CNPJ. Posso usar o sistema?
+<span class="faq-btn-toggle">+</span>
+</button>
+<div class="faq-accordion-content">
+<p>Pode sim! Nosso sistema funciona para MEIs, autônomos e até para quem está começando. Sem burocracia.</p>
+</div>
+</div>
+</div>
+</div>
+ </div>
+</section>
+
+
+
+<!-- ======================================== -->
+<!-- FOOTER                                   -->
+<!-- ======================================== -->
+<footer class="footer" id="footer">
+    <div class="container">
+        <div class="footer-grid">
+
+            <!-- COLUNA 1: APENAS A LOGO -->
+            <div class="footer-coluna footer-coluna-logo">
+                <a href="#home" class="footer-logo">
+                    <img src="portifolio-img/identidade-visual/CELLY ID Elementos-06.png" alt="Celly Sistemas" class="footer-logo-img">
+                    <span class="footer-logo-tagline">TECNOLOGIA QUE IMPULSIONA NEGÓCIOS</span>
+                </a>
+            </div>
+
+            <!-- COLUNA 2: APENAS OS ÍCONES (Totalmente separada!) -->
+            <div class="footer-coluna footer-coluna-icones">
+                <img src="portifolio-img/identidade-visual/icones.png" alt="Ícones Celly" class="footer-icones-img">
+            </div>
+
+            <!-- COLUNA 3: LINKS RÁPIDOS -->
+            <div class="footer-coluna">
+                <h4 class="footer-titulo">Links rápidos</h4>
+                <ul class="footer-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="portfolio.html">Sobre</a></li>
+                    <li><a href="portfolio.html#projetos">Sistemas</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </div>
+
+            <!-- COLUNA 4: SISTEMAS -->
+            <div class="footer-coluna">
+                <h4 class="footer-titulo">Sistemas</h4>
+                <ul class="footer-links">
+                    <li><a href="#cardapio">Cardápio Digital</a></li>
+                    <li><a href="#kds">KDS</a></li>
+                    <li><a href="#entregas">Gestão de Entregas</a></li>
+                    <li><a href="#whatsapp">Automação WhatsApp</a></li>
+                </ul>
+            </div>
+
+            <!-- COLUNA 5: CONTATO -->
+            <div class="footer-coluna">
+                <h4 class="footer-titulo">Contato</h4>
+                <ul class="footer-contato">
+                    <li><i class="fas fa-phone"></i><a href="tel:+550000000000">(00) 00000-0000</a></li>
+                    <li><i class="fas fa-envelope"></i><a href="mailto:contato@cellysistemas.com">contato@cellysistemas.com</a></li>
+                    <li><i class="fas fa-map-marker-alt"></i><span>Brasil</span></li>
+                    <li><i class="fas fa-clock"></i><span>Atendimento 24/7</span></li>
+                </ul>
+                <div class="footer-social">
+                    <a href="#" class="footer-social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="footer-social-link"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="footer-social-link"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="footer-social-link"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-divider"></div>
+
+        <div class="footer-bottom">
+            <p class="footer-copy">&copy; 2026 <strong>Celly Sistemas</strong> - Todos os direitos reservados.</p>
+            <div class="footer-bottom-links">
+                <a href="#">Política de Privacidade</a>
+                <span class="footer-bottom-divider">|</span>
+                <a href="#">Termos de Uso</a>
+            </div>
+        </div>
+    </div>
+    <!-- ======================================== -->
+<!-- CHATBOT FLUTUANTE - ROBO DE ATENDIMENTO -->
+<!-- ======================================== -->
+<div class="chatbot-float" id="chatbotFloat">
+    <!-- BOTÃO DE ABRIR -->
+    <button class="chatbot-toggle" id="chatbotToggle">
+        <div class="chatbot-toggle-icon">
+            <i class="fas fa-robot"></i>
+        </div>
+        <span class="chatbot-toggle-text">Olá! Posso ajudar?</span>
+        <div class="chatbot-toggle-pulse"></div>
+    </button>
+
+    <!-- JANELA DO CHAT -->
+    <div class="chatbot-window" id="chatbotWindow">
+        <!-- CABEÇALHO -->
+        <div class="chatbot-header">
+            <div class="chatbot-header-info">
+                <div class="chatbot-avatar">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <div>
+                    <span class="chatbot-header-title">Atendimento Celly</span>
+                    <span class="chatbot-header-status">🟢 Online agora</span>
+                </div>
+            </div>
+            <button class="chatbot-close" id="chatbotClose">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+
+        <!-- MENSAGENS -->
+        <div class="chatbot-messages" id="chatbotMessages">
+            <div class="chatbot-msg chatbot-msg-bot">
+                <div class="chatbot-msg-avatar">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <div class="chatbot-msg-content">
+                    <p>Olá! 👋 Sou o assistente virtual da Celly Sistemas.</p>
+                    <p>Como posso ajudar você hoje? Escolha uma opção abaixo:</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- OPÇÕES RÁPIDAS -->
+        <div class="chatbot-options" id="chatbotOptions">
+            <button class="chatbot-option" data-pergunta="planos">💎 Planos e Preços</button>
+            <button class="chatbot-option" data-pergunta="demo">🎥 Ver demonstração</button>
+            <button class="chatbot-option" data-pergunta="duvidas">❓ Dúvidas</button>
+            <button class="chatbot-option" data-pergunta="contato">📞 Falar com humano</button>
+        </div>
+
+        <!-- INPUT -->
+        <div class="chatbot-input-area">
+            <input type="text" class="chatbot-input" id="chatbotInput" placeholder="Digite sua mensagem...">
+            <button class="chatbot-send" id="chatbotSend">
+                <i class="fas fa-paper-plane"></i>
+            </button>
+        </div>
+    </div>
+</div>
+</footer>
+<script src="java.js"></script>
+</body>
+</html>
