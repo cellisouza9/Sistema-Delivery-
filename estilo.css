@@ -131,8 +131,8 @@ body {
     padding: 0;
     position: relative;
     right: -300px;
-     gap: 12px; 
-     max-width: 850px; 
+     gap: 6px;
+     max-width: 1050px;
      margin-top: 28px;
 
 }
@@ -148,14 +148,15 @@ body {
     text-decoration: none;
     color: var(--preto-texto);
     font-weight: 600;
-    font-size: 1rem;
-    padding: 0 32px;
+    font-size: 0.92rem;
+    padding: 0 18px;
     height: 100%;              /* ADICIONE — estica o link pra altura toda do container pai */
     display: flex;             /* ADICIONE — necessário pra centralizar o texto verticalmente */
     align-items: center;       /* ADICIONE — centraliza o texto no meio da altura */
     border-radius: 40px;
     transition: all 0.2s;
     font-family: var(--font);
+    white-space: nowrap;
 }
 .nav-menu-m33 .nav-link a:hover {
     background: var(--roxo);   /* ANTES: var(--roxo-fraco) — preenche com roxo cheio */
