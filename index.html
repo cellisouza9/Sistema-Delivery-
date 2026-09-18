@@ -327,14 +327,15 @@
 <li>Sem fidelidade</li>
 </ul>
 <div class="cardapio-gratis-no-card"><span>💳</span>Não exigimos cartão. Todas as funções por <strong>7 dias</strong>!</div>
-<form class="cardapio-gratis-form">
-<div class="cardapio-gratis-form-group"><input type="text" placeholder="Nome da loja" /></div>
-<div class="cardapio-gratis-form-group"><select><option value="" disabled selected>Qual seu segmento?</option><option value="restaurante">Restaurante</option><option value="pizzaria">Pizzaria</option><option value="hamburgueria">Hamburgueria</option><option value="cafeteria">Cafeteria</option><option value="doceria">Doceria</option><option value="outro">Outro</option></select></div>
-<div class="cardapio-gratis-form-group"><input type="tel" placeholder="WhatsApp da sua loja" /></div>
-<div class="cardapio-gratis-form-row">
-<div class="cardapio-gratis-form-group"><input type="email" placeholder="Seu e-mail" /></div>
-<div class="cardapio-gratis-form-group"><input type="password" placeholder="Senha (mín. 8 caracteres)" /></div>
-</div>
+<p class="cardapio-gratis-aviso">Manda seu interesse que enviaremos o teste do seu sistema por 7 dias.</p>
+<form class="cardapio-gratis-form" id="cardapioGratisForm" action="https://formsubmit.co/cellisistemas@gmail.com" method="POST">
+<input type="hidden" name="_subject" value="Novo lead - Cardápio Grátis 🧪">
+<input type="hidden" name="_template" value="table">
+<input type="hidden" name="_captcha" value="false">
+<div class="cardapio-gratis-form-group"><input type="text" name="Nome da loja" placeholder="Nome da loja" required /></div>
+<div class="cardapio-gratis-form-group"><select name="Segmento" required><option value="" disabled selected>Qual seu segmento?</option><option value="Restaurante">Restaurante</option><option value="Pizzaria">Pizzaria</option><option value="Hamburgueria">Hamburgueria</option><option value="Cafeteria">Cafeteria</option><option value="Doceria">Doceria</option><option value="Outro">Outro</option></select></div>
+<div class="cardapio-gratis-form-group"><input type="tel" name="WhatsApp" placeholder="WhatsApp da sua loja" required /></div>
+<div class="cardapio-gratis-form-group"><input type="email" name="E-mail" placeholder="Seu e-mail" required /></div>
 <button type="submit" class="btn-cardapio-gratis"> Quero meu cardápio grátis</button>
 </form>
 <p class="cardapio-gratis-terms">Ao prosseguir você concorda com os <a href="#">termos de uso</a>.</p>

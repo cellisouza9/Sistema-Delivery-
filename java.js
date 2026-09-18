@@ -830,3 +830,40 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 });
 
+// ============================================
+// FORMULÁRIO CARDÁPIO GRÁTIS
+// ============================================
+document.addEventListener('DOMContentLoaded', function () {
+    const formCardapioGratis = document.getElementById('cardapioGratisForm');
+    if (!formCardapioGratis) return;
+
+    formCardapioGratis.addEventListener('submit', function (e) {
+        e.preventDefault();
+        const btn = formCardapioGratis.querySelector('.btn-cardapio-gratis');
+        const textoOriginal = btn.textContent;
+        btn.textContent = 'Enviando...';
+        btn.disabled = true;
+
+        fetch('https://formsubmit.co/ajax/cellisistemas@gmail.com', {
+            method: 'POST',
+            headers: { 'Accept': 'application/json' },
+            body: new FormData(formCardapioGratis)
+        })
+            .then(function () {
+                btn.textContent = '✅ Recebemos! Vamos te chamar no WhatsApp';
+                setTimeout(function () {
+                    btn.textContent = textoOriginal;
+                    btn.disabled = false;
+                    formCardapioGratis.reset();
+                }, 3500);
+            })
+            .catch(function () {
+                btn.textContent = 'Erro ao enviar, tente novamente';
+                setTimeout(function () {
+                    btn.textContent = textoOriginal;
+                    btn.disabled = false;
+                }, 3500);
+            });
+    });
+});
+

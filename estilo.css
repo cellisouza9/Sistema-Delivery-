@@ -2081,6 +2081,13 @@ color: #1A5CD9;
     font-size: 1.1rem;
 }
 
+.cardapio-gratis-aviso {
+    text-align: center;
+    font-size: 0.85rem;
+    color: var(--cinza-texto);
+    margin: 0 0 16px 0;
+}
+
 .cardapio-gratis-form {
     margin-top: 4px;
 }
