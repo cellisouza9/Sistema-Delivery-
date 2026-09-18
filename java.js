@@ -610,7 +610,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // ============================================
     const respostas = {
         'planos': {
-            texto: '💎 Temos 3 planos incríveis:<br><br>• <strong>BÁSICO</strong> - R$ 49,90/mês<br>• <strong>COMPLETO</strong> - R$ 79,90/mês<br>• <strong>PREMIUM</strong> - R$ 99,90/mês<br><br>📌 Todos com instalação e suporte incluídos!',
+            texto: '💎 Temos 3 planos incríveis:<br><br>• <strong>CARDÁPIO WEB</strong> - R$ 29,90/mês<br>• <strong>COMPLETO</strong> - R$ 89,90/mês<br>• <strong>PREMIUM</strong> - R$ 149,90/mês<br><br>📌 Todos com instalação e suporte incluídos!',
             delay: 500
         },
         'demo': {
